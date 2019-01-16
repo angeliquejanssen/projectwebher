@@ -1,0 +1,323 @@
+/* NEXA FONT - LIGHT & BOLD */
+
+@font-face {
+    font-family: 'Nexa_Free_Light';
+    src: url('Nexa_Free_Light-webfont.woff2') format('woff2'), url('Nexa_Free_Light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'nexa_bold';
+    src: url('nexa_bold-webfont.woff') format('woff'), url('nexa_bold-webfont.woff2') format('woff2');
+}
+
+
+/* BODY */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Nexa_Free_Light';
+    font-size: 1em;
+    background-color: #fff;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+
+/* HEADER & NAVIGATION */
+
+header {
+    height: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    background-color: #ffffff;
+    padding: 3em 3em 3em 2em;
+}
+
+nav ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    padding-left: 0.5em;
+}
+
+nav li {
+    margin: 0 0.8em;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'nexa_bold';
+    font-size: 0.5em;
+    color: #00D66C;
+}
+
+header img {
+    height: 3.5em;
+}
+
+nav ul li:nth-of-type(3) a {
+    border: none;
+    border-radius: 0.8em;
+    padding: 0.4em 0.5em;
+    background-color: #ff3268;
+    color: #ffffff;
+    display: flex;
+    box-shadow: 0em 0.2em #B3254A;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    background-color: #F3E5D9;
+    border-radius: 3em;
+}
+
+
+/* MIJN VERHALEN */
+
+section {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F3E5D9;
+    border-radius: 3em 3em 0em 0em;
+}
+
+
+h2 {
+    font-size: 1.5em;
+    color: #2800a0;
+    width: 90%;
+    font-family: 'nexa_bold';
+}
+
+
+
+
+/* VERHALEN OVERZICHT */
+
+div {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+
+article {
+    width: 180%;
+    margin: 1.5em;
+    border: solid 0.2em;
+    border-radius: 2em;
+    border-color: #2800a0;
+    background-color: #2800a0;
+}
+
+article > img {
+    width: 100%;
+    padding: 0em 1em 1em 1em;
+}
+
+h4 a {
+    font-family: 'nexa_bold';
+    font-size: 1.3em;
+    padding: 0em 1em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* BUTTONS - DELETE / DOWNLOAD */
+
+article button:first-of-type {
+    margin: 0em 1em 1em 1em;
+    padding-bottom: 1em;
+    background-image: url(icons/delete.png);
+    background-size: 1.2em;
+    background-repeat: no-repeat;
+    background-color: #ff3268;
+    box-shadow: 0em 0.2em #B3254A;
+    background-position: 50% 50%;
+
+}
+
+article button:first-of-type:hover {
+    background-image: url(icons/deleteopen.png);
+    outline: none;
+}
+
+article button:nth-of-type(2) {
+    padding-bottom: 1em;
+    background-image: url(icons/downloadwit.png);
+    background-size: 1.2em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+article button:nth-of-type(2):focus {
+    background-image: url(icons/download.gif);
+    background-size: 3.5em;
+    outline: none;
+}
+
+button {
+    margin: 0.35em;
+    padding: 2.5em 0.5em 0.5em 0.5em;
+    background-color: #00D66C;
+    width: 3.5em;
+    font-family: 'nexa_bold';
+    font-size: 1em;
+    color: #fff;
+    border-radius: 5em;
+    border: none;
+    box-shadow: 0em 0.2em #01964C;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #ff3268;
+    box-shadow: 0em 0.2em #B3254A;
+    transition-duration: 0.6s;
+}
+
+
+
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES : MOBILE - 280px */
+
+@media(min-width:280px) {
+
+    div {
+        width: 100%;
+        padding-bottom: 2em;
+    }
+
+    section:first-of-type {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    h2 {
+         padding: 2em 0em 1em 0em;
+        margin: 1em 2em 0em 2em;
+    }
+
+}
+
+
+
+
+/* MEDIA QUERIES : TABLET - 700px */
+
+@media(min-width:700px) {
+
+    nav ul li a {
+        font-size: 1.5em;
+    }
+
+    article {
+        width: 40%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        color: #2800a0;
+        width: 90%;
+        margin: 0em 0em 0em 2em;
+        font-family: 'nexa_bold';
+    }
+
+
+
+
+
+/* MEDIA QUERIES : DESKTOP - 1000px */
+
+@media(min-width:1000px) {
+
+        article {
+            width: 25%;
+        }
+
+        h2 {
+            font-size: 1.5em;
+            color: #2800a0;
+            width: 90%;
+            font-family: 'nexa_bold';
+        }
+
+
+
+
+
+/* LINK HOVER EFFECT - Bron : http://ianlunn.github.io/Hover/ */
+
+
+/* LINK HOVER - BUZZ */
+
+@-webkit-keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+@keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+.hvr-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+}
+
+.hvr-buzz:hover,
+.hvr-buzz:focus,
+.hvr-buzz:active {
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}

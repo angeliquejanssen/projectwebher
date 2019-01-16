@@ -1,0 +1,699 @@
+/* NEXA FONT - LIGHT & BOLD */
+
+@font-face {
+    font-family: 'Nexa_Free_Light';
+    src: url('Nexa_Free_Light-webfont.woff2') format('woff2'), url('Nexa_Free_Light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'nexa_bold';
+    src: url('nexa_bold-webfont.woff') format('woff'), url('nexa_bold-webfont.woff2') format('woff2');
+}
+
+
+
+
+/* BODY */
+
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: 'Nexa_Free_Light';
+    font-size: 1em;
+    background-color: #fff;
+    width: 100%;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+
+/* HEADER & NAVIGATION */
+
+header {
+    height: 2em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    background-color: #ffffff;
+    padding: 3em 3em 3em 2em;
+}
+
+nav ul {
+    list-style: none;
+    align-items: center;
+    display: flex;
+    padding-left: 0.5em;
+}
+
+nav li {
+    margin: 0 0.8em;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: 'nexa_bold';
+    font-size: 0.5em;
+    color: #00D66C;
+}
+
+header img {
+    height: 3.5em;
+}
+
+nav ul li:nth-of-type(3) a {
+    border: none;
+    border-radius: 0.8em;
+    padding: 0.4em 0.5em;
+    background-color: #ff3268;
+    color: #ffffff;
+    display: flex;
+    box-shadow: 0em 0.2em #B3254A;
+}
+
+#save.yay:after {
+    content: "➊";
+    font-family: 'nexa_bold';
+    font-size: 1.5em;
+    color: #00D66C;
+}
+
+
+
+
+/* INGELOGD VERSIE! */
+
+div > a {
+    font-family: 'nexa_bold';
+    color: #fff;
+    background-color: #00D66C;
+    border-radius: 3em;
+    padding: 1em;
+    margin-top: 10em;
+    text-decoration: none;
+}
+
+
+
+
+
+/* HOMEPAGE : WELCOME & FEATURED TODAY */
+
+/* Welcome text & featured story */
+
+h1 {
+    font-family: 'nexa_bold';
+    font-size: 2em;
+    color: #2800a0;
+}
+
+h1 + p {
+    color: #2800a0;
+    margin: 1em 0em;
+}
+
+section article h4 a {
+    font-size: 1em;
+    padding: 0;
+}
+
+section div:first-of-type {
+    width: 90%;
+    padding: 1em;
+}
+
+section article {
+    width: 100%;
+}
+
+section article h4 {
+    font-family: 'nexa_bold';
+    font-size: 1.3em;
+    padding: 0em 1em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+section:first-of-type {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    padding: 1em;
+    margin: 1em;
+}
+
+h1 + button:first-of-type {
+    padding-bottom: 1em;
+    background-image: url(icons/add.png);
+    background-size: 1.2em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%
+}
+
+h1 + button:nth-of-type(2) {
+    padding-bottom: 1em;
+    background-image: url(icons/downloadwit.png);
+    background-image: url(icons/downloadwit.png);
+    background-size: 1.2em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+
+
+
+
+
+/* VERHALEN OVERZICHT */
+
+section:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #F3E5D9;
+    border-radius: 3em 3em 0em 0em;
+}
+
+
+
+
+
+/* NIGHT STORIES TOGGLE MET JAVASCRIPT */
+
+#myDIV {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    background-color: #F3E5D9;
+}
+
+#moon {
+    padding: 1em;
+    background-color: #dcdcdc;
+    box-shadow: 0em 0.2em #c0c0c0;
+    background-image: url(icons/moon.png);
+    background-size: 1em;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#moon:hover {
+    background-color: #2800a0;
+}
+
+#moon:active {
+    background-color: #2800a0;
+}
+
+
+
+
+/* ZOEKBALK */
+
+h2 {
+    font-size: 1.5em;
+    color: #2800a0;
+    width: 90%;
+    margin: 2em;
+    font-family: 'nexa_bold';
+}
+
+
+h2 + div {
+    display: flex;
+    flex: wrap;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    padding: 2em;
+    justify-content: space-between;
+}
+
+
+
+/* SLIDE IN/OUT ZOEKBALK */
+input[type=text] {
+  width: 30%;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 50%;
+}
+
+
+
+input {
+    background-color: #f7f7f7;
+    background-size: 2em;
+    font-family: 'nexa_bold';
+    padding: 1em;
+    border-radius: 1em;
+    border-style: none;
+    cursor: text;
+    font-size: 1.1em;
+    display: flex;
+}
+
+input + p {
+    font-family: 'nexa_bold';
+    color: #2800a0;
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+    margin: 1em;
+}
+
+
+
+/* VERHALEN OVERZICHT */
+
+div:nth-of-type(2) {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: #F3E5D9;
+}
+
+div:nth-of-type(3) {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    background-color: #F3E5D9;
+
+}
+
+article {
+    width: 180%;
+    margin: 1.5em;
+    border: solid 0.2em;
+    border-radius: 2em;
+    border-color: #2800a0;
+    background-color: #2800a0;
+}
+
+article > img {
+    width: 100%;
+    padding: 0em 1em 1em 1em;
+}
+
+h4 a {
+    font-family: 'nexa_bold';
+    font-size: 1.3em;
+    padding: 0em 1em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+
+
+
+
+/* BUTTONS PER VERHAAL OM TE SAVEN / DOWNLOADEN / MARK AS READ */
+
+/* SAVE BUTTON */
+
+article button:first-of-type {
+    margin: 0em 1em 1em 1em;
+    padding-bottom: 1em;
+    background-image: url(icons/add.png);
+    background-size: 1.2em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%
+}
+
+article button:first-of-type:focus {
+    background-image: url(icons/checkmark-xxl.png);
+    outline: none;
+}
+
+
+/* DOWNLOAD BUTTON */
+
+article button:nth-of-type(2) {
+    padding-bottom: 1em;
+    background-image: url(icons/downloadwit.png);
+    background-size: 1.2em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+article button:nth-of-type(2):focus {
+    background-image: url(icons/download.gif);
+    background-size: 3.5em;
+    outline: none;
+}
+
+
+/* MARK AS READ BUTTON */
+
+button:nth-of-type(3) {
+    background-color: #ff3268;
+    background-image: url(icons/read.png);
+    padding-bottom: 1em;
+    background-size: 1.4em;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    box-shadow: 0em 0.2em #B3254A;
+}
+
+
+/* STANDARD BUTTON SETTINGS */
+
+button {
+    margin: 0.35em;
+    padding: 2.5em 0.5em 0.5em 0.5em;
+    background-color: #00D66C;
+    width: 3.5em;
+    font-family: 'nexa_bold';
+    font-size: 1em;
+    color: #fff;
+    border-radius: 5em;
+    border: none;
+    box-shadow: 0em 0.2em #01964C;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+article + div {
+    font-family: 'nexa_bold';
+    width: 21%;
+    text-align: center;
+    border: none;
+    margin-bottom: 2em;
+    border-radius: 0.8em;
+    padding: 0.4em 0.5em;
+    background-color: #ff3268;
+    color: #ffffff;
+    display: flex;
+    box-shadow: 0em 0.2em #B3254A;
+}
+
+article + div:hover {
+    cursor: pointer;
+}
+
+
+
+
+
+/* MEDIA QUERIES */
+/* MEDIA QUERIES : MOBILE - 280px */
+
+@media(min-width:280px) {
+
+    section div {
+        width: 100%;
+        padding-bottom: 1em;
+    }
+
+    section:first-of-type {
+        display: block;
+    }
+
+    section article {
+        margin: 0;
+    }
+
+    nav ul li a {
+        font-size: 1.2em;
+    }
+
+    #save.yay:after {
+        font-size: 1.2em;
+    }
+
+    input {
+        font-size: 0.9em;
+    }
+
+    /* SLIDE IN/OUT ZOEKBALK */
+    input[type=text] {
+      width: 30%;
+      transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+      width: 70%;
+    }
+
+    input + p {
+        display: none;
+    }
+
+    section:nth-of-type(2) {
+        display: inline-block;
+    }
+
+
+    h2 {
+        margin: 2em 2em 0em 2em;
+    }
+
+    section div:first-of-type {
+        width: 90%;
+        padding: 1em 0em 1em 3em;
+        justify-content: space-between;
+    }
+
+    article + div {
+        width: 17%;
+    }
+
+
+    video:first-of-type {
+        display: block;
+    }
+
+    video:nth-of-type(2) {
+        display: none;
+    }
+
+}
+
+
+
+
+/* MEDIA QUERIES : TABLET - 700px */
+
+@media(min-width:700px) {
+
+    section:first-of-type {
+        display: flex;
+    }
+
+    nav ul li a {
+        font-size: 1.5em;
+    }
+
+    #save.yay:after {
+        font-size: 1.5em;
+    }
+
+    article {
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+        color: #2800a0;
+        width: 90%;
+        margin: 2em;
+        font-family: 'nexa_bold';
+    }
+
+    /* SLIDE IN/OUT ZOEKBALK */
+    input[type=text] {
+      width: 30%;
+      transition: width 0.4s ease-in-out;
+    }
+
+    input[type=text]:focus {
+      width: 50%;
+    }
+
+    input + p {
+        font-family: 'nexa_bold';
+        color: #2800a0;
+        display: flex;
+        flex-grow: 2;
+        justify-content: flex-end;
+        margin: 1em;
+    }
+
+    section:nth-of-type(2) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 auto;
+        background-color: #F3E5D9;
+        border-radius: 3em 3em 0em 0em;
+    }
+
+
+    h2 + div {
+        display: flex;
+        flex: wrap;
+        flex-direction: row;
+        align-items: center;
+        width: 90%;
+        padding: 2em;
+        justify-content: space-between;
+    }
+
+
+    section div:first-of-type {
+        width: 90%;
+        padding: 1em;
+        justify-content: space-between;
+    }
+
+    article + div {
+        width: 13%;
+    }
+
+     video:first-of-type {
+        display: block;
+    }
+
+    video:nth-of-type(2) {
+        display: none;
+    }
+
+
+
+
+
+/* MEDIA QUERIES : DESKTOP - 1000px */
+
+@media(min-width:1000px) {
+
+        article {
+            width: 25%;
+        }
+
+        div:nth-of-type(1) a {
+            font-size: 1.2em;
+        }
+
+        input {
+            background-color: #f7f7f7;
+            background-size: 2em;
+            font-family: 'nexa_bold';
+            padding: 1em;
+            border-radius: 1em;
+            border-style: none;
+            cursor: text;
+            font-size: 1.1em;
+            display: flex;
+        }
+
+        #myDIV {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: center;
+        }
+
+        article + div {
+            width: 15%;
+            display: block;
+            align-items: center;
+        }
+
+
+         video:first-of-type {
+            display: none;
+        }
+
+        video:nth-of-type(2) {
+            display: block;
+        }
+
+
+
+
+
+
+/* LINK HOVER EFFECT - Bron : http://ianlunn.github.io/Hover/ */
+
+
+/* LINK HOVER - BUZZ */
+
+@-webkit-keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+@keyframes hvr-buzz {
+    50% {
+        -webkit-transform: translateX(3px) rotate(2deg);
+        transform: translateX(3px) rotate(2deg);
+    }
+    100% {
+        -webkit-transform: translateX(-3px) rotate(-2deg);
+        transform: translateX(-3px) rotate(-2deg);
+    }
+}
+
+.hvr-buzz {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px transparent;
+}
+
+.hvr-buzz:hover,
+.hvr-buzz:focus,
+.hvr-buzz:active {
+    -webkit-animation-name: hvr-buzz;
+    animation-name: hvr-buzz;
+    -webkit-animation-duration: 0.15s;
+    animation-duration: 0.15s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}

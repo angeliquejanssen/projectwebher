@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+
+    <link href="css/hover.css" rel="stylesheet" media="all">
+
+    <meta charset="UTF-8">
+
+    <title>Transavia Story Site</title>
+</head>
+
+<body>
+
+    <!-- HEADER + NAVIGATION -->
+
+    <header>
+        <a href="index.html"><img src="styles/images/transavialogo.png" alt="Transavia logo"></a>
+
+        <nav>
+            <ul>
+                <li class="hvr-buzz">
+                    <a href="index.html">Home</a></li>
+                <li class="hvr-buzz" id="save">
+                    <a href="mijnverhalen.html">Mijn Verhalen</a></li>
+                <li class="hvr-buzz">
+                    <a href="login.html">Inloggen</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+
+        <!-- WELCOME & FEATURED TODAY -->
+
+        <section>
+
+            <div>
+                <h1>Welcome to Transavia Storytime</h1>
+                <p>Stories for on the road, in the air, or for when you've arrived at your destination.</p>
+            </div>
+
+
+            <article>
+                <h4><a href="iphone.html" class="hvr-buzz">Today's featured story - iPhone</a></h4>
+                <img alt="foto" src="styles/images/iphone2.jpg">
+                <button id="plus"></button>
+                <button></button>
+            </article>
+
+        </section>
+
+
+        <!-- VERHALEN OVERZICHT -->
+
+        <section>
+
+            <h2>De Transavia Storybook</h2>
+
+
+
+        <!-- SEARCH BAR + NIGHT STORIES TOGGLE -->
+
+            <div>
+
+                <input type="text" placeholder="Zoek...">
+
+                <p>Night Time Stories</p>
+
+
+                <button id="moon" onclick="myFunction()"> </button>
+            </div>
+
+
+        </section>
+
+
+
+
+        <!-- NIGHT STORIES : SHOWS NIGHT TIME STORIES AT THE TOP WHEN TOGGLE IS CLICKED -->
+
+        <div id="myDIV">
+
+            <article>
+                <h4><a class="hvr-buzz" href="">Winter</a></h4>
+                <img src="styles/images/winter.jpg" alt="iphone">
+                <button></button>
+                <button></button>
+            </article>
+
+            <article>
+                <h4><a class="hvr-buzz" href="">Zombie</a></h4>
+                <img src="styles/images/zombie.jpg" alt="zombie">
+                <button></button>
+                <button></button>
+            </article>
+
+            <article>
+                <h4><a class="hvr-buzz" href="">Voetbalanisten</a></h4>
+                <img src="styles/images/cruyff.jpg" alt="cruyff">
+                <button></button>
+                <button></button>
+            </article>
+
+        </div>
+
+
+
+
+
+       <!-- ALL STORIES // SHOWS ALL STORIES IN RANDOM ORDER WHEN NIGHT TOGGLE IS CLICKED AGAIN -->
+
+        <div>
+
+            <article>
+                <h4><a class="hvr-buzz" href="verliefd.html">Verliefd</a></h4>
+                <img alt="foto" src="styles/images/liefde.jpg">
+                <button></button>
+                <button></button>
+            </article>
+
+            <article>
+                <h4><a class="hvr-buzz" href="iphone.html">iPhone</a></h4>
+                <img alt="foto" src="styles/images/iphone.jpg">
+                <button></button>
+                <button></button>
+            </article>
+
+            <article>
+                <h4><a class="hvr-buzz" href="speels.html">Presentator die...</a></h4>
+                <img alt="foto" src="styles/images/presentator.jpg">
+
+                <button></button>
+                <button></button>
+            </article>
+
+            <article>
+                <h4><a class="hvr-buzz" href="">Voetbalanisten</a></h4>
+                <img alt="foto" src="styles/images/cruyff.jpg">
+                <button></button>
+                <button></button>
+            </article>
+
+            <article>
+                <h4><a class="hvr-buzz" href="">Western</a></h4>
+                <img alt="foto" src="styles/images/western.jpg">
+                <button></button>
+                <button></button>
+            </article>
+
+            <article>
+                <h4><a class="hvr-buzz" href="">Recept</a></h4>
+                <img alt="foto" src="styles/images/recept.jpg">
+
+                <button></button>
+                <button></button>
+            </article>
+
+       <div onclick="scrollToTop();">Back to top ↑</div>
+
+        </div>
+
+
+
+    </main>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
