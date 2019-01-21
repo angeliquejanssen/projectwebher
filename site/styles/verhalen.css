@@ -87,7 +87,6 @@ section {
     align-content: center;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 3em;
     border-radius: 3em;
     background-color: #F3E5D9;
 
@@ -120,7 +119,7 @@ h2 {
 
 /* STORY BUTTONS : SAVE - DOWNLOAD - READ*/
 
-button:first-of-type {
+button#plus {
     padding-bottom: 1em;
     background-image: url(icons/add.png);
     background-size: 1.2em;
@@ -128,12 +127,12 @@ button:first-of-type {
     background-position: 50% 50%
 }
 
-button:first-of-type:focus {
+button#plus:focus {
     background-image: url(icons/checkmark-xxl.png);
     outline: none;
 }
 
-button:nth-of-type(2) {
+button#download{
     padding-bottom: 1em;
     background-image: url(icons/downloadwit.png);
     background-size: 1.2em;
@@ -141,21 +140,12 @@ button:nth-of-type(2) {
     background-position: 50% 50%;
 }
 
-button:nth-of-type(2):focus {
+button#download:focus {
     background-image: url(icons/download.gif);
     background-size: 3.5em;
     outline: none;
 }
 
-button:nth-of-type(3) {
-    background-color: #ff3268;
-    background-image: url(icons/read.png);
-    padding-bottom: 1em;
-    background-size: 1.4em;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    box-shadow: 0em 0.2em #B3254A;
-}
 
 button {
     margin: 0.35em;
@@ -182,7 +172,7 @@ button:active {
 
 
 div img {
-    width: 90%;
+    width: 100%;
 }
 
 #save.yay:after {
@@ -192,20 +182,25 @@ div img {
     color: #00D66C;
 }
 
+#book {
+    position: relative;
+    padding-bottom: 56%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
 
-/* VERHAAL : VERLIEFD
+}
 
-        .scrolling-wrapper {
-            display: flex;
-            flex-wrap: nowrap;
-            overflow-x: auto;
-        }
+#book iframe {
+    width: 100%;
+    height: 500px;
+}
 
-        .card {
-            flex: 0 0 auto;
-            width: 100%;
-        }
-*/
+
+
+/* VERHAAL : IPHONE */
+
+
 
 /* MEDIA QUERIES */
 /* MEDIA QUERIES : MOBILE - 280px */
@@ -243,13 +238,40 @@ div img {
         display: none;
     }
 
-    div img:first-of-type {
+    div img.mobile {
         display: block;
     }
 
-    div img:nth-of-type(2) {
+    div img.desktop {
         display: none;
     }
+
+    /* VERHAAL : IPHONE - 280px */
+
+    a img.next {
+        position: absolute;
+        width: 4em;
+        bottom: 3em;
+        right: 4em;
+    }
+
+    a img.back {
+        position: absolute;
+        width: 4em;
+        bottom: -2em;
+        right: 4em;
+    }
+
+
+
+    /* VERHAAL : VERLIEFD - 280px */
+
+    #book iframe {
+        width: 100%;
+        height: 270px;
+    }
+
+
 
 
 
@@ -276,14 +298,38 @@ div img {
         display: none;
     }
 
-    div img:first-of-type {
+    div img.mobile {
         display: block;
          width: 100%;
     }
 
-    div img:nth-of-type(2) {
+    div img.desktop {
         display: none;
     }
+
+    /* VERHAAL : IPHONE - 700px */
+
+    a img.next {
+        position: absolute;
+        width: 4em;
+        bottom: -15em;
+        right: 6em;
+    }
+
+    a img.back {
+        position: absolute;
+        width: 4em;
+        bottom: -20em;
+        right: 6em;
+    }
+
+    /* VERHAAL : VERLIEFD - 700px */
+
+   #book iframe {
+        width: 100%;
+        height: 350px;
+    }
+
 
 
 
@@ -306,17 +352,40 @@ div img {
             width: 100%;
         }
 
-        div img:first-of-type {
+        div img.mobile {
             display: none;
         }
 
-        div img:nth-of-type(2) {
+        div img.desktop {
             display: block;
             width: 100%;
         }
 
+        /* VERHAAL : IPHONE - 1000px */
+
+        a img.next {
+            position: absolute;
+            width: 4em;
+            bottom: 5em;
+            right: 8em;
+            }
+
+        a img.back {
+            position: absolute;
+            width: 4em;
+            bottom: 0em;
+            right: 8em;
+        }
+
+    /* VERHAAL : VERLIEFD - 1000px */
+
+    #book iframe {
+    width: 100%;
+    height: 500px;
+}
 
 
+    }
 
 
 
